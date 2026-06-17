@@ -1,0 +1,188 @@
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== BODY ===== */
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #FFF4F3;
+    color: #5A4C4C;
+    line-height: 1.5;
+}
+
+
+/* ===== ENCABEZADO ===== */
+
+#encabezado {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#encabezado img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+header p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+
+/* ===== NAV ===== */
+
+nav {
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    background-color: rgba(249,210,208,0.9);
+    border-radius: 50px;
+    padding: 15px 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5A4C4C;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* ===== MAIN ===== */
+
+main {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+    background-color: rgba(255,255,255,0.9);
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+main h1 {
+    margin-bottom: 10px;
+    color: #5A4C4C;
+}
+
+main p {
+    font-size: 1.1rem;
+}
+
+/* ===== SECCIONES ===== */
+
+section {
+    padding: 60px 5%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #5A4C4C;
+    font-size: 2rem;
+}
+
+
+/* ===== GRILLA PRODUCTOS ===== */
+
+section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* ===== PRODUCTOS ===== */
+
+section > div > div {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+section > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== IMÁGENES ===== */
+section img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+.desc {
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+/* ===== CALIFICACIÓN ===== */
+.rate {
+    font-weight: bold;
+    color: #e79392;
+    margin-bottom: 5px;
+}
+
+/* ===== PRECIO ===== */
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5A4C4C;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer{
+    background-color: #F9D2D0;
+    text-align: center;
+    padding: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+}
