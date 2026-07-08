@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - AuraHair</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="img/header.png" alt="Imagen principal AuraHair">
+        <h1>AuraHair</h1>
+        <p>Estamos para ayudarte con cualquier consulta sobre nuestros productos.</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="pagina-contacto">
+
+            <!-- CONTACTO -->
+            <section class="contacto">
+
+                <h2>Contactanos</h2>
+
+                <p>
+                    ¿Tenés alguna consulta sobre nuestros productos o necesitás asesoramiento
+                    para el cuidado de tu cabello? Completá el formulario y nos pondremos
+                    en contacto con vos lo antes posible.
+                </p>
+
+                <form action="https://formspree.io/f/mrewvrep" method="POST">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresá tu nombre"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribí tu consulta..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+
+            </section>
+
+            <!-- INFORMACIÓN -->
+            <section class="info-contacto">
+
+                <h2>Información de contacto</h2>
+
+                <p><strong>Email:</strong> contacto@aurahair.com</p>
+                <p><strong>Teléfono:</strong> +54 11 4567-8901</p>
+                <p><strong>Dirección:</strong> Buenos Aires, Argentina</p>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Buenos+Aires,+Argentina&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Lazzati, Casalderrey, Ibañez y Flores - 5ºB Informática</p>
+    </footer>
+
+</body>
+</html>

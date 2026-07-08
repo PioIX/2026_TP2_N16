@@ -188,3 +188,153 @@ footer {
         align-items:center;
     }
 }
+
+
+/* ========================= */
+/* PÁGINA CONTACTO */
+/* ========================= */
+
+.pagina-contacto{
+    width:100%;
+}
+
+/* Sección del formulario */
+
+.pagina-contacto .contacto{
+    max-width:700px;
+    margin:50px auto;
+    padding:40px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.pagina-contacto .contacto h2{
+    font-size:2.2rem;
+    color:#5A4C4C;
+    margin-bottom:20px;
+}
+
+.pagina-contacto .contacto p{
+    color:#666;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+/* Formulario */
+
+.pagina-contacto .contacto form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.pagina-contacto .campo{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.pagina-contacto .campo label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#5A4C4C;
+}
+
+.pagina-contacto .campo input,
+.pagina-contacto .campo textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #E5CACA;
+    border-radius:10px;
+    font-size:1rem;
+    font-family:"Poppins",sans-serif;
+    transition:.3s;
+}
+
+.pagina-contacto .campo input:focus,
+.pagina-contacto .campo textarea:focus{
+    outline:none;
+    border-color:#E79392;
+    box-shadow:0 0 8px rgba(231,147,146,.35);
+}
+
+.pagina-contacto .campo textarea{
+    resize:vertical;
+}
+
+/* Botón */
+
+.pagina-contacto button{
+    width:220px;
+    margin:10px auto 0;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#E79392;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.pagina-contacto button:hover{
+    background:#5A4C4C;
+}
+
+/* Información de contacto */
+
+.pagina-contacto .info-contacto{
+    max-width:900px;
+    margin:60px auto;
+    text-align:center;
+}
+
+.pagina-contacto .info-contacto h2{
+    font-size:2rem;
+    color:#5A4C4C;
+    margin-bottom:30px;
+}
+
+.pagina-contacto .info-contacto p{
+    margin:18px 0;
+    font-size:1.1rem;
+}
+
+.pagina-contacto .info-contacto strong{
+    color:#5A4C4C;
+}
+
+.pagina-contacto .info-contacto iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:20px;
+    margin-top:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .pagina-contacto .contacto{
+        width:95%;
+        padding:25px;
+    }
+
+    .pagina-contacto .contacto h2{
+        font-size:2rem;
+    }
+
+    .pagina-contacto .info-contacto{
+        width:95%;
+    }
+
+    .pagina-contacto button{
+        width:100%;
+    }
+
+}
